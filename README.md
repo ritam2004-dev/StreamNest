@@ -37,6 +37,7 @@ Backend
 	•	Multer (File Upload)
 	•	Cloudinary (Media Storage)
 
+```bash
 .
 ├── client/
 │   ├── src/
@@ -61,9 +62,8 @@ Backend
     │   ├── app.js
     │   └── index.js
     └── package.json
-## Setup
+```
 
----
 
 
 1. Clone this repository:
