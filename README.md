@@ -68,8 +68,10 @@ Backend
 
 1. Clone this repository:
 
+```bash
 git clone https://github.com/ritam2004-dev/streamnest.git
 cd streamnest
+```
 
 2. Install backend dependencies:
 
