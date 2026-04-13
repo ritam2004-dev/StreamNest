@@ -31,12 +31,12 @@ export default function Login() {
       setError("");
 
       const res = await loginUser(form);
-
+      console.log("FULL LOGIN RESPONSE:", res);
       console.log("LOGIN RESPONSE:", res.data); // 🔥 debug
 
       // ✅ FIX HERE
-      const userData = res?.data?.user;
-      const accessToken = res?.data?.accessToken;
+      const userData = res?.data?.data?.user;
+      const accessToken = res?.data?.data?.accessToken;
 
       if (!userData || !accessToken) {
         throw new Error("Invalid response from server");
@@ -54,6 +54,7 @@ export default function Login() {
 
       setError(
         err?.response?.data?.message ||
+        err?.response?.data?.error ||
         err?.message ||
         "Login failed"
       );
